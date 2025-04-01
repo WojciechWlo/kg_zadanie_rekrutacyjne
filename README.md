@@ -1,23 +1,23 @@
 # Giełda wierzytelności
 
 ## Komendy
-Instalacja modułów.
+Instalacja modułów:
 ```
 npm install
 ```
-Tryb deweloperski.
+Tryb deweloperski:
 ```
 npm run start
 ```
-Kompilacja.
+Kompilacja:
 ```
 npm run build
 ```
-Tryb produkcyjny.
+Tryb produkcyjny:
 ```
 serve -s build
 ```
-Testy jednostkowe i integracyjne.
+Testy jednostkowe i integracyjne:
 ```
 npm run test
 ```
