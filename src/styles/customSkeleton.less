@@ -1,0 +1,25 @@
+
+@lighter_skeleton_kolor: #e0e0e0;
+@darker_skeleton_kolor: #f5f5f5;
+
+.custom-skeleton {
+    background-color: @lighter_skeleton_kolor;
+    border-radius: 4px;         
+
+}
+
+.blinking-skeleton{
+    animation: customBlink 1.5s ease-in-out infinite;
+
+    @keyframes customBlink {
+        0% {
+            background-color: @lighter_skeleton_kolor;
+        }
+        50% {
+            background-color: @darker_skeleton_kolor;
+        }
+        100% {
+            background-color: @lighter_skeleton_kolor;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@table_structure_color: #D3D3D3;
+@table_record_color: #003054;
+@records_padding_horizontal: 18px;
+
+
+.debt_table{
+    border-collapse: collapse;
+    width: 100%;
+
+    @media(max-width: 766px)
+    {
+        max-width: 1200px;
+        min-width: 1200px;
+        width: 1100px;
+    }
+
+    &__header{
+        color: @table_structure_color;
+        text-align: left;
+        font-size: 13px;
+        padding-top: 17px;
+        padding-bottom: 13px;
+        
+
+    }
+
+    &__row{
+        border-bottom: 1px solid @table_structure_color;
+    }
+
+
+    &__cell{
+        padding-left: calc(@records_padding_horizontal/2);
+        padding-right: calc(@records_padding_horizontal/2);
+
+
+        &:first-child{
+            padding-left: @records_padding_horizontal;
+        }
+
+        &:last-child{
+            padding-right: @records_padding_horizontal;
+        }
+    }
+
+    &__data{
+        padding-top: 22px;
+        padding-bottom: 18px;
+        color: #003054;
+    }
+
+}
+
+
+.Name_col{
+    width:  calc(26.2% );
+}
+.NIP_col{
+    width: calc(17.5% );
+}
+.Value_col{
+    width: calc(27.6% );
+}
+.Date_col{
+    width:  calc(28.7%);
+}
+
+
+.debt_table svg{
+    margin-left: 9px;
+}
+
+.debt_container{
+    margin-left: 101px;
+    margin-right: 99px;
+    max-width: 1720px;
+
+
+    @media(max-width: 991px)
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+.debt_table_overflow_control{
+    @media(max-width: 766px)
+    {
+        display: block; // Zapobiega problemom z overflow w niektórych przeglądarkach
+        overflow-x: auto;
+    }
+}
